@@ -170,6 +170,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\ProductManagerController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -235,6 +236,11 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\ProductManager\Index.cshtml" />
+    <Content Include="Views\ProductManager\Create.cshtml" />
+    <Content Include="Views\ProductManager\Edit.cshtml" />
+    <Content Include="Views\ProductManager\ConfirmDelete.cshtml" />
+    <Content Include="Views\ProductManager\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -251,6 +257,24 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\JBLShop.core\JBLShop.Core.csproj">
+      <Project>{b07989cd-7777-44e3-8a56-6c1732f3653d}</Project>
+      <Name>JBLShop.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\JBLShop.DataAccess.InMemory\JBLShop.DataAccess.InMemory.csproj">
+      <Project>{52263312-6cf9-485f-b76c-8946104f0ab2}</Project>
+      <Name>JBLShop.DataAccess.InMemory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\JBLShop.DataAccess.SQL\JBLShop.DataAccess.SQL.csproj">
+      <Project>{9a2841d6-9e15-477a-a778-270431798256}</Project>
+      <Name>JBLShop.DataAccess.SQL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\JBLShop.Services\JBLShop.Services.csproj">
+      <Project>{1b2d07cc-849d-4f1e-babf-de7e3d490c25}</Project>
+      <Name>JBLShop.Services</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
